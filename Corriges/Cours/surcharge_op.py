@@ -17,7 +17,11 @@ class Point:
     def __str__(self):
         """Surcharge de l'affichage"""
         return f"({self.x}, {self.y})"
-
+    
+    def __repr__(self):
+        """Surcharge de l'affichage representatif"""
+        return f"Point(x, y)"
+        
 
 # Creation d'objet de la classe
 p1 = Point(3, 4)
@@ -36,3 +40,5 @@ print("p2 :", p2)
 print("p1 + p2 =", p3)
 # Affichage du resultat de la soustraction
 print("p1 - p2 =", p4)
+
+print(repr(p1))
